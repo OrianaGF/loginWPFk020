@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _15022022.Negocio;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,7 @@ namespace _15022022
     /// </summary>
     public partial class MainWindow : Window
     {
-        string usernameValido = "admin";
-        string passwordValido = "nimda";
-
+        private LoginService login = new LoginService();
         public MainWindow()
         {
             InitializeComponent();
@@ -33,13 +32,15 @@ namespace _15022022
             string username = usernameTextBox.Text;
             string password = passwordTextbox.Password;
 
-            if(usernameValido == username && passwordValido == password)
+            if(login.check(username, password) )
             {
-                salidaLabel.Content = "Usuario logiado";
+                //salidaLabel.Content = "Usuario logiado";
+                MessageBox.Show("Exito!!","Usuario logeado");
             }
             else
             {
-                salidaLabel.Content = "Usuario o password incorrectos";
+                MessageBox.Show("Eroro de login", "Usuario o password incorrectos");
+                //salidaLabel.Content = "Usuario o password incorrectos";
             }
         }
     }

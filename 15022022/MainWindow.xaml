@@ -10,7 +10,7 @@
         <Label Name="etiqueta1" Margin="10" FontSize="20">
             Username: 
         </Label>
-        <TextBox Name="usernameTextBox" Margin="10" VerticalAlignment="Center" AcceptsReturn="False"></TextBox>
+        <TextBox Name="usernameTextBox" Margin="10" FontSize="20"  VerticalAlignment="Center" AcceptsReturn="False"></TextBox>
         <Label Margin="10" FontSize="20">Password:</Label>
         <PasswordBox Name="passwordTextbox" VerticalAlignment="Center" Margin="10" FontSize="20" ></PasswordBox>
         <Button Name="loginButton" Click="loginButton_Click" Margin="10" FontSize="20" Background="LightBlue" Foreground="Black" Width="200" > Entrar </Button>
