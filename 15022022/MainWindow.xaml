@@ -6,14 +6,15 @@
         xmlns:local="clr-namespace:_15022022"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <StackPanel Orientation="Vertical" Vertical>
+    <StackPanel Orientation="Vertical" Width="400" Background="LightGray" >
         <Label Name="etiqueta1" Margin="10" FontSize="20">
             Username: 
         </Label>
-        <TextBox Name="usernameTextBox" VerticalAlignment="Center"></TextBox>
+        <TextBox Name="usernameTextBox" Margin="10" VerticalAlignment="Center" AcceptsReturn="False"></TextBox>
         <Label Margin="10" FontSize="20">Password:</Label>
-        <PasswordBox Name="passwordTextbox" VerticalAlignment="Center" Margin="10" FontSize="20"></PasswordBox>
-        <Button Name="loginButton" Click="loginButton_Click" Margin="10" FontSize="20"></Button>
+        <PasswordBox Name="passwordTextbox" VerticalAlignment="Center" Margin="10" FontSize="20" ></PasswordBox>
+        <Button Name="loginButton" Click="loginButton_Click" Margin="10" FontSize="20" Background="LightBlue" Foreground="Black" Width="200" > Entrar </Button>
+        <RichTextBox Margin="10" FontSize="20" Visibility="Hidden" ></RichTextBox>
         <Label Name="salidaLabel" FontSize="24" ></Label>
     </StackPanel>
 </Window>
